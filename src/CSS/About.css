@@ -1,0 +1,135 @@
+#mainCon {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #312e81 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animated Background Orbs */
+.bg-gradient-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.orb-1 {
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(135deg, #8b5cf6, #3b82f6);
+  top: -200px;
+  left: -200px;
+}
+
+.orb-2 {
+  width: 600px;
+  height: 600px;
+  background: linear-gradient(135deg, #ec4899, #8b5cf6);
+  bottom: -250px;
+  right: -250px;
+}
+
+.topTitle {
+  text-align: center;
+  z-index: 10;
+  position: relative;
+}
+
+#plogo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 40px rgba(139, 92, 246, 0.4);
+  border: 3px solid rgba(139, 92, 246, 0.3);
+  object-fit: cover;
+}
+
+#nameDet {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #a78bfa, #60a5fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+#Jtitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #c4b5fd;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
+#portTagLine {
+  max-width: 700px;
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  line-height: 1.8;
+  margin: 0 auto 3rem;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  z-index: 10;
+  position: relative;
+}
+
+#image {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  object-fit: contain;
+  box-shadow: 0 20px 60px rgba(139, 92, 246, 0.3);
+  border: 3px solid rgba(139, 92, 246, 0.2);
+  transform-style: preserve-3d;
+}
+
+#Abtme {
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, #8b5cf6, #3b82f6);
+  border-radius: 50px;
+  box-shadow: 0 10px 30px rgba(139, 92, 246, 0.4);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 30px;
+  color: #a78bfa;
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  #nameDet {
+    font-size: 1.5rem;
+  }
+
+  #Jtitle {
+    font-size: 1.3rem;
+  }
+
+  #portTagLine {
+    font-size: 1rem;
+  }
+
+  #image {
+    width: 250px;
+    height: 250px;
+  }
+}

@@ -1,0 +1,104 @@
+#Main {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #1e1b4b 0%, #0f172a 100%);
+  padding: 4rem 2rem;
+  position: relative;
+}
+
+#abtMeSec {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+#abtme {
+  font-size: 3.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #a78bfa, #60a5fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 30px rgba(139, 92, 246, 0.3);
+}
+
+#Summ {
+  max-width: 1000px;
+  margin: 0 auto 4rem;
+  padding: 3rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+#semsec {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: #cbd5e1;
+  text-align: justify;
+}
+
+#btndiv {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+#btnicn {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  max-width: 800px;
+  width: 100%;
+  perspective: 1000px;
+}
+
+.ibtnname {
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(
+    135deg,
+    rgba(139, 92, 246, 0.2),
+    rgba(59, 130, 246, 0.2)
+  );
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid rgba(139, 92, 246, 0.3);
+  backdrop-filter: blur(10px);
+  transform-style: preserve-3d;
+}
+
+.icoons {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  filter: brightness(1) invert(0);
+}
+
+@media (max-width: 768px) {
+  #abtme {
+    font-size: 2.5rem;
+  }
+
+  #Summ {
+    padding: 2rem;
+  }
+
+  #semsec {
+    font-size: 1rem;
+  }
+
+  #btnicn {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .ibtnname {
+    width: 100px;
+    height: 100px;
+  }
+}

@@ -1,0 +1,146 @@
+#ContSec {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #1e1b4b 0%, #0f172a 100%);
+  padding: 4rem 2rem;
+  position: relative;
+}
+
+#conSec {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+#ConHead {
+  font-size: 3.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #a78bfa, #60a5fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+#ConnIcon {
+  max-width: 1000px;
+  margin: 0 auto 4rem;
+}
+
+.icon-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.icon-box {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2.5rem;
+  border: 2px solid rgba(139, 92, 246, 0.3);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  transform-style: preserve-3d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 180px;
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.details {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #c4b5fd;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.details a {
+  color: #a78bfa;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.details a:hover {
+  color: #60a5fa;
+  text-decoration: underline;
+}
+
+#footer {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 2rem;
+}
+
+#Footpar {
+  font-size: 1rem;
+  color: #94a3b8;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#btanch {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1000;
+}
+
+#TopBttn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #8b5cf6, #3b82f6);
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(139, 92, 246, 0.4);
+  transition: all 0.3s ease;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+  #ConHead {
+    font-size: 2.5rem;
+  }
+
+  .icon-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .icon-box {
+    padding: 2rem;
+    min-height: 150px;
+  }
+
+  .icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  #TopBttn {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .icon-row {
+    grid-template-columns: 1fr;
+  }
+}

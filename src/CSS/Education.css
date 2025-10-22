@@ -1,0 +1,90 @@
+#EduSec {
+  padding: 4rem 2rem 2rem;
+  background: linear-gradient(180deg, #0f172a 0%, #1e1b4b 100%);
+  text-align: center;
+}
+
+#EduSec h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #a78bfa, #60a5fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 2rem;
+}
+
+#EducationSec {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #1e1b4b 0%, #0f172a 100%);
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#EnggSec,
+#IntrSec {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 3rem;
+  border: 2px solid rgba(139, 92, 246, 0.3);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  transform-style: preserve-3d;
+  transition: all 0.3s ease;
+}
+
+#Enggbtn,
+#Intrbtn {
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, #8b5cf6, #3b82f6);
+  border-radius: 50px;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 10px 30px rgba(139, 92, 246, 0.4);
+  transition: all 0.3s ease;
+}
+
+#Degr,
+#intr {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #a78bfa;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+#DegrClz,
+#intrClz {
+  font-size: 1.2rem;
+  color: #60a5fa;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  #EduSec h1 {
+    font-size: 2.5rem;
+  }
+
+  #EnggSec,
+  #IntrSec {
+    padding: 2rem;
+  }
+
+  #Degr,
+  #intr {
+    font-size: 1.2rem;
+  }
+
+  #DegrClz,
+  #intrClz {
+    font-size: 1rem;
+  }
+}
