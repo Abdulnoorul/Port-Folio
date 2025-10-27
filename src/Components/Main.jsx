@@ -91,7 +91,7 @@ function Main() {
             whileHover={{ scale: 1.02 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            Professional with 5 years of experience, including 2+ years in IT,
+            Professional with 5 years of experience, including 3+ years in IT,
             transitioning from publishing and editorial management to excel as a
             full-stack web developer. Skilled in React, Spring Boot, Java,
             MySQL, HTML, CSS, JavaScript, and tools like Git, Docker, and
